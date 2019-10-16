@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/stdfx.h
+iostream
+-
+stdlib.h
+-
+SFML/Graphics.hpp
+-
+SFML/Audio.hpp
+-
+SFML/OpenGL.hpp
+-
+
+/home/asif/Documents/GitHub/SFML-3D/src/main.cpp
+stdfx.h
+/home/asif/Documents/GitHub/SFML-3D/src/stdfx.h
+
