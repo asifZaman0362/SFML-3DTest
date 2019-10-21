@@ -4,7 +4,7 @@
 #include <iostream>
 
 int main () {
-    Settings settings("Window", 800, 480, 24, 0, false, false, false, false);
+    Settings settings("Window", 800, 480, 24, 0, true, false, false, false);
     Game game(settings);
     game.Start();
 

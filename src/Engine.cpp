@@ -16,10 +16,9 @@ Game::~Game() {
 }
 
 void Game::Start() {
-    bool exit = false;
-    bool sRgb = false;
+    running = true;
 
-    while (!exit)
+    while (running)
     {
         // Request a 24-bits depth buffer when creating the window
         sf::ContextSettings ctxSettings;
@@ -33,7 +32,7 @@ void Game::Start() {
         window.setVerticalSyncEnabled(true);
 
         // Create a sprite for the background
-        backgroundTexture.setSrgb(sRgb);
+        backgroundTexture.setSrgb(settings.sRGB);
         if (!backgroundTexture.loadFromFile("Assets/Textures/background.jpg"))
             return;
         background.setTexture(backgroundTexture);
@@ -56,6 +55,7 @@ void Game::Start() {
         sf::Texture texture;
         if (!texture.loadFromFile("Assets/Textures/texture.jpg"))
             return;
+        texture.setSrgb(settings.sRGB);
 
         // Attempt to generate a mipmap for our cube texture
         // We don't check the return value here since
@@ -162,14 +162,14 @@ void Game::Start() {
                 // Close window: exit
                 if (event.type == sf::Event::Closed)
                 {
-                    exit = true;
+                    running = false;
                     window.close();
                 }
 
                 // Escape key: exit
                 if ((event.type == sf::Event::KeyPressed) && (event.key.code == sf::Keyboard::Escape))
                 {
-                    exit = true;
+                    running = false;
                     window.close();
                 }
 
@@ -192,23 +192,10 @@ void Game::Start() {
                     }
                 }
 
-                // Space key: toggle sRGB conversion
-                if ((event.type == sf::Event::KeyPressed) && (event.key.code == sf::Keyboard::Space))
-                {
-                    sRgb = !sRgb;
-                    window.close();
-                }
-
                 // Adjust the viewport when the window is resized
                 if (event.type == sf::Event::Resized)
                 {
-                    // Make the window the active window for OpenGL calls
-                    window.setActive(true);
-
-                    glViewport(0, 0, event.size.width, event.size.height);
-
-                    // Make the window no longer the active window for OpenGL calls
-                    window.setActive(false);
+                    Resize(event.size.width, event.size.height);
                 }
             }
 
@@ -218,27 +205,12 @@ void Game::Start() {
 }
 
 void Game::InitObjects() {
-    sf::Texture* backgroundTexture = new sf::Texture();
-    backgroundTexture->loadFromFile("Assets/Textures/background.jpg");
-    sf::Sprite *sprite = new sf::Sprite(*backgroundTexture);
-    sfObjects.push_back(new SFObject(sprite, 0));
-    sf::Text *text = new sf::Text();
-    sf::Font *sansation = new sf::Font();
-    sansation->loadFromFile("Assets/Fonts/sansation.ttf");
-    text->setFont(*sansation);
-    text->setString("Go Fuck Yourself Punk!");
-    text->setFillColor(sf::Color::Red);
-    text->setCharacterSize(50);
-    text->setPosition(sf::Vector2f(400-text->getGlobalBounds().width/2, 300-text->getGlobalBounds().height/2));
-    sfObjects.push_back(new SFObject(text, 2));
+    
 }
 
 void Game::Resize(unsigned int x, unsigned int y) {
-    window.setSize(sf::Vector2u(x, y));
     window.setActive(true);
-    glViewport(0, 0, window.getSize().x, window.getSize().y);
-    float ratio = float(x) / y;
-    glFrustum(-ratio, ratio, -1.0, 1.0, 1.0, 500);
+    glViewport(0, 0, x, y);
     window.setActive(false);
 }
 

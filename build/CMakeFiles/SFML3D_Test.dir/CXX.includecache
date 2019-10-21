@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-../include/drawableObject.h
+../include/DrawableObject.h
 SFML/OpenGL.hpp
 -
 SFML/Graphics.hpp
@@ -16,7 +16,7 @@ vector
 algorithm
 -
 
-../include/engine.h
+../include/Engine.h
 SFML/OpenGL.hpp
 -
 GL/gl.h
@@ -29,12 +29,14 @@ vector
 -
 string.h
 -
-drawableObject.h
-../include/drawableObject.h
+string
+-
+DrawableObject.h
+../include/DrawableObject.h
 
-/home/asif/Documents/GitHub/SFML-3D/src/engine.cpp
-engine.h
-/home/asif/Documents/GitHub/SFML-3D/src/engine.h
+/home/asif/Documents/GitHub/SFML-3D/src/Engine.cpp
+Engine.h
+/home/asif/Documents/GitHub/SFML-3D/src/Engine.h
 iostream
 -
 

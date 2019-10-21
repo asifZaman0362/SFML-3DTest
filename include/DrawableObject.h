@@ -1,4 +1,6 @@
-#pragma once
+#ifndef _DRAWABLEOBJECT_H_
+#define _DRAWABLEOBJECT_H_
+
 #include <SFML/OpenGL.hpp>
 #include <SFML/Graphics.hpp>
 #include <vector>
@@ -7,13 +9,15 @@
 
 class SFObject {
 public:
-    SFObject(sf::Drawable *drawable, int layer = 2) : drawable(drawable), layer(layer) {}
-    ~SFObject() {
-        delete drawable;
-        drawable = nullptr;
-    }
-    sf::Drawable* GetDrawable() { return drawable; }
-    int GetLayer() { return layer; }
+    SFObject(sf::Drawable*, int);
+    ~SFObject();
+    
+    sf::Drawable* GetDrawable();
+    int GetLayer();
+    
+    void SetDrawable(sf::Drawable*);
+    void SetLayer(int);
+
 private:
     sf::Drawable* drawable;
     int layer;
@@ -21,18 +25,21 @@ private:
 
 class GLObject {
 public:
-    GLObject(const GLfloat* data, sf::Texture *texture, int layer = 1) : 
-            data(data), texture(texture), layer(layer) {}
-    ~GLObject() {
-        delete data;
-        delete texture;
-        //data = nullptr;
-        texture = nullptr;
-    }
-    const GLfloat* GetData() { return data; }
-    int GetLayer() { return layer; }
+    GLObject(const GLfloat*, sf::Texture*, int);
+    ~GLObject();
+
+    const GLfloat* GetData();
+    int GetLayer();
+    sf::Texture* GetTexture();
+    
+    void SetTexture(sf::Texture*);
+    void SetLayer(int);
+
 private:
     const GLfloat* data;
     sf::Texture* texture;
     int layer;
 };
+
+
+#endif

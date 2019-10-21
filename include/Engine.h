@@ -1,9 +1,13 @@
+#ifndef _ENGINE_H_
+#define _ENGINE_H_
+
 #include <SFML/OpenGL.hpp>
 #include <GL/gl.h>
 #include <SFML/Graphics.hpp>
 #include <SFML/Audio.hpp>
 #include <vector>
 #include <string.h>
+#include <string>
 #include "DrawableObject.h"
 
 
@@ -17,9 +21,9 @@ struct Settings {
     bool mipmap;
     bool vSync;
     bool fullScreen;
-    char* title;
+    std::string title;
     
-    Settings(char* title, int window_width, int window_height, int depthBits,
+    Settings(std::string title, int window_width, int window_height, int depthBits,
     int frameRateLimit, bool sRGB, bool mipmap, bool vSync, bool fullScreen) {
         this->title = title;
         this->window_width = window_width;
@@ -65,3 +69,5 @@ private:
     bool Compare(SFObject*, SFObject*);
     void SortObjectsByLayer();
 };
+
+#endif
