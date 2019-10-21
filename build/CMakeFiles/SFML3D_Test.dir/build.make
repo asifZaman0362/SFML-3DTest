@@ -57,49 +57,64 @@ include CMakeFiles/SFML3D_Test.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/SFML3D_Test.dir/flags.make
 
-CMakeFiles/SFML3D_Test.dir/src/main.cpp.o: CMakeFiles/SFML3D_Test.dir/flags.make
-CMakeFiles/SFML3D_Test.dir/src/main.cpp.o: ../src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/asif/Documents/GitHub/SFML-3D/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/SFML3D_Test.dir/src/main.cpp.o"
-	/bin/g++-8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SFML3D_Test.dir/src/main.cpp.o -c /home/asif/Documents/GitHub/SFML-3D/src/main.cpp
+CMakeFiles/SFML3D_Test.dir/src/Main.cpp.o: CMakeFiles/SFML3D_Test.dir/flags.make
+CMakeFiles/SFML3D_Test.dir/src/Main.cpp.o: ../src/Main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/asif/Documents/GitHub/SFML-3D/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/SFML3D_Test.dir/src/Main.cpp.o"
+	/bin/g++-8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SFML3D_Test.dir/src/Main.cpp.o -c /home/asif/Documents/GitHub/SFML-3D/src/Main.cpp
 
-CMakeFiles/SFML3D_Test.dir/src/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SFML3D_Test.dir/src/main.cpp.i"
-	/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/asif/Documents/GitHub/SFML-3D/src/main.cpp > CMakeFiles/SFML3D_Test.dir/src/main.cpp.i
+CMakeFiles/SFML3D_Test.dir/src/Main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SFML3D_Test.dir/src/Main.cpp.i"
+	/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/asif/Documents/GitHub/SFML-3D/src/Main.cpp > CMakeFiles/SFML3D_Test.dir/src/Main.cpp.i
 
-CMakeFiles/SFML3D_Test.dir/src/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SFML3D_Test.dir/src/main.cpp.s"
-	/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/asif/Documents/GitHub/SFML-3D/src/main.cpp -o CMakeFiles/SFML3D_Test.dir/src/main.cpp.s
+CMakeFiles/SFML3D_Test.dir/src/Main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SFML3D_Test.dir/src/Main.cpp.s"
+	/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/asif/Documents/GitHub/SFML-3D/src/Main.cpp -o CMakeFiles/SFML3D_Test.dir/src/Main.cpp.s
 
-CMakeFiles/SFML3D_Test.dir/src/engine.cpp.o: CMakeFiles/SFML3D_Test.dir/flags.make
-CMakeFiles/SFML3D_Test.dir/src/engine.cpp.o: ../src/engine.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/asif/Documents/GitHub/SFML-3D/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/SFML3D_Test.dir/src/engine.cpp.o"
-	/bin/g++-8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SFML3D_Test.dir/src/engine.cpp.o -c /home/asif/Documents/GitHub/SFML-3D/src/engine.cpp
+CMakeFiles/SFML3D_Test.dir/src/Engine.cpp.o: CMakeFiles/SFML3D_Test.dir/flags.make
+CMakeFiles/SFML3D_Test.dir/src/Engine.cpp.o: ../src/Engine.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/asif/Documents/GitHub/SFML-3D/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/SFML3D_Test.dir/src/Engine.cpp.o"
+	/bin/g++-8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SFML3D_Test.dir/src/Engine.cpp.o -c /home/asif/Documents/GitHub/SFML-3D/src/Engine.cpp
 
-CMakeFiles/SFML3D_Test.dir/src/engine.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SFML3D_Test.dir/src/engine.cpp.i"
-	/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/asif/Documents/GitHub/SFML-3D/src/engine.cpp > CMakeFiles/SFML3D_Test.dir/src/engine.cpp.i
+CMakeFiles/SFML3D_Test.dir/src/Engine.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SFML3D_Test.dir/src/Engine.cpp.i"
+	/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/asif/Documents/GitHub/SFML-3D/src/Engine.cpp > CMakeFiles/SFML3D_Test.dir/src/Engine.cpp.i
 
-CMakeFiles/SFML3D_Test.dir/src/engine.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SFML3D_Test.dir/src/engine.cpp.s"
-	/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/asif/Documents/GitHub/SFML-3D/src/engine.cpp -o CMakeFiles/SFML3D_Test.dir/src/engine.cpp.s
+CMakeFiles/SFML3D_Test.dir/src/Engine.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SFML3D_Test.dir/src/Engine.cpp.s"
+	/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/asif/Documents/GitHub/SFML-3D/src/Engine.cpp -o CMakeFiles/SFML3D_Test.dir/src/Engine.cpp.s
+
+CMakeFiles/SFML3D_Test.dir/src/DrawableObject.cpp.o: CMakeFiles/SFML3D_Test.dir/flags.make
+CMakeFiles/SFML3D_Test.dir/src/DrawableObject.cpp.o: ../src/DrawableObject.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/asif/Documents/GitHub/SFML-3D/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/SFML3D_Test.dir/src/DrawableObject.cpp.o"
+	/bin/g++-8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SFML3D_Test.dir/src/DrawableObject.cpp.o -c /home/asif/Documents/GitHub/SFML-3D/src/DrawableObject.cpp
+
+CMakeFiles/SFML3D_Test.dir/src/DrawableObject.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SFML3D_Test.dir/src/DrawableObject.cpp.i"
+	/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/asif/Documents/GitHub/SFML-3D/src/DrawableObject.cpp > CMakeFiles/SFML3D_Test.dir/src/DrawableObject.cpp.i
+
+CMakeFiles/SFML3D_Test.dir/src/DrawableObject.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SFML3D_Test.dir/src/DrawableObject.cpp.s"
+	/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/asif/Documents/GitHub/SFML-3D/src/DrawableObject.cpp -o CMakeFiles/SFML3D_Test.dir/src/DrawableObject.cpp.s
 
 # Object files for target SFML3D_Test
 SFML3D_Test_OBJECTS = \
-"CMakeFiles/SFML3D_Test.dir/src/main.cpp.o" \
-"CMakeFiles/SFML3D_Test.dir/src/engine.cpp.o"
+"CMakeFiles/SFML3D_Test.dir/src/Main.cpp.o" \
+"CMakeFiles/SFML3D_Test.dir/src/Engine.cpp.o" \
+"CMakeFiles/SFML3D_Test.dir/src/DrawableObject.cpp.o"
 
 # External object files for target SFML3D_Test
 SFML3D_Test_EXTERNAL_OBJECTS =
 
-SFML3D_Test: CMakeFiles/SFML3D_Test.dir/src/main.cpp.o
-SFML3D_Test: CMakeFiles/SFML3D_Test.dir/src/engine.cpp.o
+SFML3D_Test: CMakeFiles/SFML3D_Test.dir/src/Main.cpp.o
+SFML3D_Test: CMakeFiles/SFML3D_Test.dir/src/Engine.cpp.o
+SFML3D_Test: CMakeFiles/SFML3D_Test.dir/src/DrawableObject.cpp.o
 SFML3D_Test: CMakeFiles/SFML3D_Test.dir/build.make
 SFML3D_Test: /usr/lib/x86_64-linux-gnu/libsfml-graphics.so.2.5.1
 SFML3D_Test: /usr/lib/x86_64-linux-gnu/libsfml-audio.so.2.5.1
 SFML3D_Test: /usr/lib/x86_64-linux-gnu/libsfml-window.so.2.5.1
 SFML3D_Test: /usr/lib/x86_64-linux-gnu/libsfml-system.so.2.5.1
 SFML3D_Test: CMakeFiles/SFML3D_Test.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/asif/Documents/GitHub/SFML-3D/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable SFML3D_Test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/asif/Documents/GitHub/SFML-3D/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable SFML3D_Test"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/SFML3D_Test.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -123,59 +123,86 @@ SFML3D_Test/fast:
 	$(MAKE) -f CMakeFiles/SFML3D_Test.dir/build.make CMakeFiles/SFML3D_Test.dir/build
 .PHONY : SFML3D_Test/fast
 
-src/engine.o: src/engine.cpp.o
+src/DrawableObject.o: src/DrawableObject.cpp.o
 
-.PHONY : src/engine.o
-
-# target to build an object file
-src/engine.cpp.o:
-	$(MAKE) -f CMakeFiles/SFML3D_Test.dir/build.make CMakeFiles/SFML3D_Test.dir/src/engine.cpp.o
-.PHONY : src/engine.cpp.o
-
-src/engine.i: src/engine.cpp.i
-
-.PHONY : src/engine.i
-
-# target to preprocess a source file
-src/engine.cpp.i:
-	$(MAKE) -f CMakeFiles/SFML3D_Test.dir/build.make CMakeFiles/SFML3D_Test.dir/src/engine.cpp.i
-.PHONY : src/engine.cpp.i
-
-src/engine.s: src/engine.cpp.s
-
-.PHONY : src/engine.s
-
-# target to generate assembly for a file
-src/engine.cpp.s:
-	$(MAKE) -f CMakeFiles/SFML3D_Test.dir/build.make CMakeFiles/SFML3D_Test.dir/src/engine.cpp.s
-.PHONY : src/engine.cpp.s
-
-src/main.o: src/main.cpp.o
-
-.PHONY : src/main.o
+.PHONY : src/DrawableObject.o
 
 # target to build an object file
-src/main.cpp.o:
-	$(MAKE) -f CMakeFiles/SFML3D_Test.dir/build.make CMakeFiles/SFML3D_Test.dir/src/main.cpp.o
-.PHONY : src/main.cpp.o
+src/DrawableObject.cpp.o:
+	$(MAKE) -f CMakeFiles/SFML3D_Test.dir/build.make CMakeFiles/SFML3D_Test.dir/src/DrawableObject.cpp.o
+.PHONY : src/DrawableObject.cpp.o
 
-src/main.i: src/main.cpp.i
+src/DrawableObject.i: src/DrawableObject.cpp.i
 
-.PHONY : src/main.i
+.PHONY : src/DrawableObject.i
 
 # target to preprocess a source file
-src/main.cpp.i:
-	$(MAKE) -f CMakeFiles/SFML3D_Test.dir/build.make CMakeFiles/SFML3D_Test.dir/src/main.cpp.i
-.PHONY : src/main.cpp.i
+src/DrawableObject.cpp.i:
+	$(MAKE) -f CMakeFiles/SFML3D_Test.dir/build.make CMakeFiles/SFML3D_Test.dir/src/DrawableObject.cpp.i
+.PHONY : src/DrawableObject.cpp.i
 
-src/main.s: src/main.cpp.s
+src/DrawableObject.s: src/DrawableObject.cpp.s
 
-.PHONY : src/main.s
+.PHONY : src/DrawableObject.s
 
 # target to generate assembly for a file
-src/main.cpp.s:
-	$(MAKE) -f CMakeFiles/SFML3D_Test.dir/build.make CMakeFiles/SFML3D_Test.dir/src/main.cpp.s
-.PHONY : src/main.cpp.s
+src/DrawableObject.cpp.s:
+	$(MAKE) -f CMakeFiles/SFML3D_Test.dir/build.make CMakeFiles/SFML3D_Test.dir/src/DrawableObject.cpp.s
+.PHONY : src/DrawableObject.cpp.s
+
+src/Engine.o: src/Engine.cpp.o
+
+.PHONY : src/Engine.o
+
+# target to build an object file
+src/Engine.cpp.o:
+	$(MAKE) -f CMakeFiles/SFML3D_Test.dir/build.make CMakeFiles/SFML3D_Test.dir/src/Engine.cpp.o
+.PHONY : src/Engine.cpp.o
+
+src/Engine.i: src/Engine.cpp.i
+
+.PHONY : src/Engine.i
+
+# target to preprocess a source file
+src/Engine.cpp.i:
+	$(MAKE) -f CMakeFiles/SFML3D_Test.dir/build.make CMakeFiles/SFML3D_Test.dir/src/Engine.cpp.i
+.PHONY : src/Engine.cpp.i
+
+src/Engine.s: src/Engine.cpp.s
+
+.PHONY : src/Engine.s
+
+# target to generate assembly for a file
+src/Engine.cpp.s:
+	$(MAKE) -f CMakeFiles/SFML3D_Test.dir/build.make CMakeFiles/SFML3D_Test.dir/src/Engine.cpp.s
+.PHONY : src/Engine.cpp.s
+
+src/Main.o: src/Main.cpp.o
+
+.PHONY : src/Main.o
+
+# target to build an object file
+src/Main.cpp.o:
+	$(MAKE) -f CMakeFiles/SFML3D_Test.dir/build.make CMakeFiles/SFML3D_Test.dir/src/Main.cpp.o
+.PHONY : src/Main.cpp.o
+
+src/Main.i: src/Main.cpp.i
+
+.PHONY : src/Main.i
+
+# target to preprocess a source file
+src/Main.cpp.i:
+	$(MAKE) -f CMakeFiles/SFML3D_Test.dir/build.make CMakeFiles/SFML3D_Test.dir/src/Main.cpp.i
+.PHONY : src/Main.cpp.i
+
+src/Main.s: src/Main.cpp.s
+
+.PHONY : src/Main.s
+
+# target to generate assembly for a file
+src/Main.cpp.s:
+	$(MAKE) -f CMakeFiles/SFML3D_Test.dir/build.make CMakeFiles/SFML3D_Test.dir/src/Main.cpp.s
+.PHONY : src/Main.cpp.s
 
 # Help Target
 help:
@@ -186,12 +213,15 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... SFML3D_Test"
 	@echo "... edit_cache"
-	@echo "... src/engine.o"
-	@echo "... src/engine.i"
-	@echo "... src/engine.s"
-	@echo "... src/main.o"
-	@echo "... src/main.i"
-	@echo "... src/main.s"
+	@echo "... src/DrawableObject.o"
+	@echo "... src/DrawableObject.i"
+	@echo "... src/DrawableObject.s"
+	@echo "... src/Engine.o"
+	@echo "... src/Engine.i"
+	@echo "... src/Engine.s"
+	@echo "... src/Main.o"
+	@echo "... src/Main.i"
+	@echo "... src/Main.s"
 .PHONY : help
 
 

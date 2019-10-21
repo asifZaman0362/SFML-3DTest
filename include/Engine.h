@@ -4,7 +4,7 @@
 #include <SFML/Audio.hpp>
 #include <vector>
 #include <string.h>
-#include "drawableObject.h"
+#include "DrawableObject.h"
 
 
 struct Settings {
@@ -51,11 +51,16 @@ private:
     sf::Clock mainClock;
     std::vector<SFObject*> sfObjects;
     std::vector<GLObject*> glObjects;
+    sf::Texture backgroundTexture;
+    sf::Text text;
+    sf::Text sRgbInstructions;
+    sf::Text mipmapInstructions;
+    sf::Sprite background;
 
     void InitObjects();
     void Input();
     void Update();
-    void Draw();
+    void Draw(float dt);
     void Resize(unsigned int, unsigned int);
     bool Compare(SFObject*, SFObject*);
     void SortObjectsByLayer();
