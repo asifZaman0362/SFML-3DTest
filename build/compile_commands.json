@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/home/asif/Documents/GitHub/SFML-3D/build",
+  "command": "/bin/g++-8   -I/home/asif/Documents/GitHub/SFML-3D/include  -g   -std=gnu++17 -o CMakeFiles/SFML3D_Test.dir/src/main.cpp.o -c /home/asif/Documents/GitHub/SFML-3D/src/main.cpp",
+  "file": "/home/asif/Documents/GitHub/SFML-3D/src/main.cpp"
+},
+{
+  "directory": "/home/asif/Documents/GitHub/SFML-3D/build",
+  "command": "/bin/g++-8   -I/home/asif/Documents/GitHub/SFML-3D/include  -g   -std=gnu++17 -o CMakeFiles/SFML3D_Test.dir/src/engine.cpp.o -c /home/asif/Documents/GitHub/SFML-3D/src/engine.cpp",
+  "file": "/home/asif/Documents/GitHub/SFML-3D/src/engine.cpp"
+}
+]

@@ -6,19 +6,35 @@
 
 #IncludeRegexTransform: 
 
-../include/stdfx.h
-iostream
+../include/drawableObject.h
+SFML/OpenGL.hpp
 -
-stdlib.h
+SFML/Graphics.hpp
+-
+vector
+-
+algorithm
+-
+
+../include/engine.h
+SFML/OpenGL.hpp
+-
+GL/gl.h
 -
 SFML/Graphics.hpp
 -
 SFML/Audio.hpp
 -
-SFML/OpenGL.hpp
+vector
 -
+string.h
+-
+drawableObject.h
+../include/drawableObject.h
 
-/home/asif/Documents/GitHub/SFML-3D/src/main.cpp
-stdfx.h
-/home/asif/Documents/GitHub/SFML-3D/src/stdfx.h
+/home/asif/Documents/GitHub/SFML-3D/src/engine.cpp
+engine.h
+/home/asif/Documents/GitHub/SFML-3D/src/engine.h
+iostream
+-
 

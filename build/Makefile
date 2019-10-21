@@ -123,6 +123,33 @@ SFML3D_Test/fast:
 	$(MAKE) -f CMakeFiles/SFML3D_Test.dir/build.make CMakeFiles/SFML3D_Test.dir/build
 .PHONY : SFML3D_Test/fast
 
+src/engine.o: src/engine.cpp.o
+
+.PHONY : src/engine.o
+
+# target to build an object file
+src/engine.cpp.o:
+	$(MAKE) -f CMakeFiles/SFML3D_Test.dir/build.make CMakeFiles/SFML3D_Test.dir/src/engine.cpp.o
+.PHONY : src/engine.cpp.o
+
+src/engine.i: src/engine.cpp.i
+
+.PHONY : src/engine.i
+
+# target to preprocess a source file
+src/engine.cpp.i:
+	$(MAKE) -f CMakeFiles/SFML3D_Test.dir/build.make CMakeFiles/SFML3D_Test.dir/src/engine.cpp.i
+.PHONY : src/engine.cpp.i
+
+src/engine.s: src/engine.cpp.s
+
+.PHONY : src/engine.s
+
+# target to generate assembly for a file
+src/engine.cpp.s:
+	$(MAKE) -f CMakeFiles/SFML3D_Test.dir/build.make CMakeFiles/SFML3D_Test.dir/src/engine.cpp.s
+.PHONY : src/engine.cpp.s
+
 src/main.o: src/main.cpp.o
 
 .PHONY : src/main.o
@@ -159,6 +186,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... SFML3D_Test"
 	@echo "... edit_cache"
+	@echo "... src/engine.o"
+	@echo "... src/engine.i"
+	@echo "... src/engine.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
