@@ -54,12 +54,7 @@ private:
     bool running;
     sf::Clock mainClock;
     std::vector<SFObject*> sfObjects;
-    std::vector<GLObject*> glObjects;
-    sf::Texture backgroundTexture;
-    sf::Text text;
-    sf::Text sRgbInstructions;
-    sf::Text mipmapInstructions;
-    sf::Sprite background;
+    std::vector<GLObject*> glObjects;;
 
     void InitObjects();
     void Input();

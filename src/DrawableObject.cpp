@@ -24,7 +24,7 @@ void SFObject::SetLayer(int layer) { this->layer = layer; }
 GLObject::GLObject(const GLfloat* data, sf::Texture* texture, int layer) : data(data), texture(texture), layer(layer) {}
 
 GLObject::~GLObject() {
-    delete data;
+    delete[] data;
     delete texture;
     data = nullptr;
     texture = nullptr;
