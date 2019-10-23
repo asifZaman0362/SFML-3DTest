@@ -6,37 +6,23 @@
 
 #IncludeRegexTransform: 
 
-../include/DrawableObject.h
-SFML/OpenGL.hpp
+../include/ModelLoader.h
+iostream
 -
-SFML/Graphics.hpp
--
-vector
--
-algorithm
--
-
-../include/Engine.h
-SFML/OpenGL.hpp
--
-GL/gl.h
--
-SFML/Graphics.hpp
--
-SFML/Audio.hpp
--
-vector
+fstream
 -
 string.h
 -
-string
+vector
 -
-DrawableObject.h
-../include/DrawableObject.h
+SFML/OpenGL.hpp
+-
 
-/home/asif/Documents/GitHub/SFML-3D/src/Engine.cpp
-Engine.h
-/home/asif/Documents/GitHub/SFML-3D/src/Engine.h
-iostream
+/home/asif/Documents/GitHub/SFML-3D/src/ModelLoader.cpp
+ModelLoader.h
+/home/asif/Documents/GitHub/SFML-3D/src/ModelLoader.h
+stdlib.h
+-
+stdio.h
 -
 

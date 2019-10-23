@@ -71,7 +71,7 @@ CMAKE_BINARY_DIR = /home/asif/Documents/GitHub/SFML-3D/build
 CMakeFiles/SFML3D_Test.dir/all:
 	$(MAKE) -f CMakeFiles/SFML3D_Test.dir/build.make CMakeFiles/SFML3D_Test.dir/depend
 	$(MAKE) -f CMakeFiles/SFML3D_Test.dir/build.make CMakeFiles/SFML3D_Test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/asif/Documents/GitHub/SFML-3D/build/CMakeFiles --progress-num=1,2,3,4 "Built target SFML3D_Test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/asif/Documents/GitHub/SFML-3D/build/CMakeFiles --progress-num=1,2,3,4,5 "Built target SFML3D_Test"
 .PHONY : CMakeFiles/SFML3D_Test.dir/all
 
 # Include target in all.
@@ -81,7 +81,7 @@ all: CMakeFiles/SFML3D_Test.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/SFML3D_Test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/asif/Documents/GitHub/SFML-3D/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/asif/Documents/GitHub/SFML-3D/build/CMakeFiles 5
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/SFML3D_Test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/asif/Documents/GitHub/SFML-3D/build/CMakeFiles 0
 .PHONY : CMakeFiles/SFML3D_Test.dir/rule

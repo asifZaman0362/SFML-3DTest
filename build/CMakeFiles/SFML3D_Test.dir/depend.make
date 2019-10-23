@@ -10,5 +10,9 @@ CMakeFiles/SFML3D_Test.dir/src/Engine.cpp.o: ../src/Engine.cpp
 
 CMakeFiles/SFML3D_Test.dir/src/Main.cpp.o: ../include/DrawableObject.h
 CMakeFiles/SFML3D_Test.dir/src/Main.cpp.o: ../include/Engine.h
+CMakeFiles/SFML3D_Test.dir/src/Main.cpp.o: ../include/ModelLoader.h
 CMakeFiles/SFML3D_Test.dir/src/Main.cpp.o: ../src/Main.cpp
+
+CMakeFiles/SFML3D_Test.dir/src/ModelLoader.cpp.o: ../include/ModelLoader.h
+CMakeFiles/SFML3D_Test.dir/src/ModelLoader.cpp.o: ../src/ModelLoader.cpp
 

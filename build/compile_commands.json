@@ -13,5 +13,10 @@
   "directory": "/home/asif/Documents/GitHub/SFML-3D/build",
   "command": "/bin/g++-8   -I/home/asif/Documents/GitHub/SFML-3D/include  -g   -std=gnu++17 -o CMakeFiles/SFML3D_Test.dir/src/DrawableObject.cpp.o -c /home/asif/Documents/GitHub/SFML-3D/src/DrawableObject.cpp",
   "file": "/home/asif/Documents/GitHub/SFML-3D/src/DrawableObject.cpp"
+},
+{
+  "directory": "/home/asif/Documents/GitHub/SFML-3D/build",
+  "command": "/bin/g++-8   -I/home/asif/Documents/GitHub/SFML-3D/include  -g   -std=gnu++17 -o CMakeFiles/SFML3D_Test.dir/src/ModelLoader.cpp.o -c /home/asif/Documents/GitHub/SFML-3D/src/ModelLoader.cpp",
+  "file": "/home/asif/Documents/GitHub/SFML-3D/src/ModelLoader.cpp"
 }
 ]

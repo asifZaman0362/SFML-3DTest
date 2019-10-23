@@ -5,11 +5,11 @@
 Game::Game(Settings settings) : settings(settings) {}
 
 Game::~Game() {
-    for(SFObject* object : sfObjects) {
+    for (SFObject* object : sfObjects) {
         delete object;
         object = nullptr;
     }
-    for(GLObject* object : glObjects) {
+    for (GLObject* object : glObjects) {
         delete object;
         object = nullptr;
     }
@@ -18,8 +18,7 @@ Game::~Game() {
 void Game::Start() {
     running = true;
 
-    while (running)
-    {
+    while (running) {
         // Request a 24-bits depth buffer when creating the window
         sf::ContextSettings ctxSettings;
         ctxSettings.depthBits = settings.depthBits;
@@ -50,12 +49,10 @@ void Game::Start() {
         // Create a clock for measuring the time elapsed
         sf::Clock clock;
         // Start game loop
-        while (window.isOpen())
-        {
+        while (window.isOpen()) {
             // Process events
             sf::Event event;
-            while (window.pollEvent(event))
-            {
+            while (window.pollEvent(event)) {
                 // Close window: exit
                 if (event.type == sf::Event::Closed)
                     Quit();
@@ -84,53 +81,52 @@ void Game::InitObjects() {
     sf::Font* font = new sf::Font();
     font->loadFromFile("Assets/Fonts/sansation.ttf");
     sf::Text* text = new sf::Text("Xello! Is Boris.\nStay cheeki breeki my friend.\nVadim Blyat!", *font);
-    text->setPosition(400-text->getGlobalBounds().width/2, 400);
+    text->setPosition(400 - text->getGlobalBounds().width / 2, 400);
     sfObjects.push_back(new SFObject(sprite, 0));
     sfObjects.push_back(new SFObject(text, 2));
-    const GLfloat* cube = new GLfloat[180] {
+    const GLfloat* cube = new GLfloat[180]{
         // positions    // texture coordinates
-        -20, -20, -20,  0, 0,
-        -20,  20, -20,  1, 0,
-        -20, -20,  20,  0, 1,
-        -20, -20,  20,  0, 1,
-        -20,  20, -20,  1, 0,
-        -20,  20,  20,  1, 1,
+        -20, -20, -20, 0, 0,
+        -20, 20, -20, 1, 0,
+        -20, -20, 20, 0, 1,
+        -20, -20, 20, 0, 1,
+        -20, 20, -20, 1, 0,
+        -20, 20, 20, 1, 1,
 
-         20, -20, -20,  0, 0,
-         20,  20, -20,  1, 0,
-         20, -20,  20,  0, 1,
-         20, -20,  20,  0, 1,
-         20,  20, -20,  1, 0,
-         20,  20,  20,  1, 1,
+        20, -20, -20, 0, 0,
+        20, 20, -20, 1, 0,
+        20, -20, 20, 0, 1,
+        20, -20, 20, 0, 1,
+        20, 20, -20, 1, 0,
+        20, 20, 20, 1, 1,
 
-        -20, -20, -20,  0, 0,
-         20, -20, -20,  1, 0,
-        -20, -20,  20,  0, 1,
-        -20, -20,  20,  0, 1,
-         20, -20, -20,  1, 0,
-         20, -20,  20,  1, 1,
+        -20, -20, -20, 0, 0,
+        20, -20, -20, 1, 0,
+        -20, -20, 20, 0, 1,
+        -20, -20, 20, 0, 1,
+        20, -20, -20, 1, 0,
+        20, -20, 20, 1, 1,
 
-        -20,  20, -20,  0, 0,
-         20,  20, -20,  1, 0,
-        -20,  20,  20,  0, 1,
-        -20,  20,  20,  0, 1,
-         20,  20, -20,  1, 0,
-         20,  20,  20,  1, 1,
+        -20, 20, -20, 0, 0,
+        20, 20, -20, 1, 0,
+        -20, 20, 20, 0, 1,
+        -20, 20, 20, 0, 1,
+        20, 20, -20, 1, 0,
+        20, 20, 20, 1, 1,
 
-        -20, -20, -20,  0, 0,
-         20, -20, -20,  1, 0,
-        -20,  20, -20,  0, 1,
-        -20,  20, -20,  0, 1,
-         20, -20, -20,  1, 0,
-         20,  20, -20,  1, 1,
+        -20, -20, -20, 0, 0,
+        20, -20, -20, 1, 0,
+        -20, 20, -20, 0, 1,
+        -20, 20, -20, 0, 1,
+        20, -20, -20, 1, 0,
+        20, 20, -20, 1, 1,
 
-        -20, -20,  20,  0, 0,
-         20, -20,  20,  1, 0,
-        -20,  20,  20,  0, 1,
-        -20,  20,  20,  0, 1,
-         20, -20,  20,  1, 0,
-         20,  20,  20,  1, 1
-    };
+        -20, -20, 20, 0, 0,
+        20, -20, 20, 1, 0,
+        -20, 20, 20, 0, 1,
+        -20, 20, 20, 0, 1,
+        20, -20, 20, 1, 0,
+        20, 20, 20, 1, 1};
     window.setActive(true);
     glEnable(GL_TEXTURE_2D);
     sf::Texture::bind(woodTexture);
@@ -161,7 +157,7 @@ void Game::Draw(float dt) {
     // Clear the depth buffer
     glClear(GL_DEPTH_BUFFER_BIT);
     // We get the position of the mouse cursor, so that we can move the box accordingly
-    float x =  sf::Mouse::getPosition(window).x * 200.f / window.getSize().x - 100.f;
+    float x = sf::Mouse::getPosition(window).x * 200.f / window.getSize().x - 100.f;
     float y = -sf::Mouse::getPosition(window).y * 200.f / window.getSize().y + 100.f;
     // Apply some transformations
     glMatrixMode(GL_MODELVIEW);
@@ -198,7 +194,7 @@ void Game::SortObjectsByLayer() {
     SFObject* key;
     for (int i = 1; i < max; i++) {
         key = sfObjects.at(i);
-        int pos = i-1;
+        int pos = i - 1;
         while (pos >= 0 && Compare(sfObjects.at(pos), key)) {
             sfObjects.at(pos + 1) = sfObjects.at(pos);
             pos--;

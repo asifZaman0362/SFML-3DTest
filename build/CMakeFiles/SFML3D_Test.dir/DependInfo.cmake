@@ -7,6 +7,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/asif/Documents/GitHub/SFML-3D/src/DrawableObject.cpp" "/home/asif/Documents/GitHub/SFML-3D/build/CMakeFiles/SFML3D_Test.dir/src/DrawableObject.cpp.o"
   "/home/asif/Documents/GitHub/SFML-3D/src/Engine.cpp" "/home/asif/Documents/GitHub/SFML-3D/build/CMakeFiles/SFML3D_Test.dir/src/Engine.cpp.o"
   "/home/asif/Documents/GitHub/SFML-3D/src/Main.cpp" "/home/asif/Documents/GitHub/SFML-3D/build/CMakeFiles/SFML3D_Test.dir/src/Main.cpp.o"
+  "/home/asif/Documents/GitHub/SFML-3D/src/ModelLoader.cpp" "/home/asif/Documents/GitHub/SFML-3D/build/CMakeFiles/SFML3D_Test.dir/src/ModelLoader.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

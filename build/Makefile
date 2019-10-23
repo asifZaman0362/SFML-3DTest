@@ -204,6 +204,33 @@ src/Main.cpp.s:
 	$(MAKE) -f CMakeFiles/SFML3D_Test.dir/build.make CMakeFiles/SFML3D_Test.dir/src/Main.cpp.s
 .PHONY : src/Main.cpp.s
 
+src/ModelLoader.o: src/ModelLoader.cpp.o
+
+.PHONY : src/ModelLoader.o
+
+# target to build an object file
+src/ModelLoader.cpp.o:
+	$(MAKE) -f CMakeFiles/SFML3D_Test.dir/build.make CMakeFiles/SFML3D_Test.dir/src/ModelLoader.cpp.o
+.PHONY : src/ModelLoader.cpp.o
+
+src/ModelLoader.i: src/ModelLoader.cpp.i
+
+.PHONY : src/ModelLoader.i
+
+# target to preprocess a source file
+src/ModelLoader.cpp.i:
+	$(MAKE) -f CMakeFiles/SFML3D_Test.dir/build.make CMakeFiles/SFML3D_Test.dir/src/ModelLoader.cpp.i
+.PHONY : src/ModelLoader.cpp.i
+
+src/ModelLoader.s: src/ModelLoader.cpp.s
+
+.PHONY : src/ModelLoader.s
+
+# target to generate assembly for a file
+src/ModelLoader.cpp.s:
+	$(MAKE) -f CMakeFiles/SFML3D_Test.dir/build.make CMakeFiles/SFML3D_Test.dir/src/ModelLoader.cpp.s
+.PHONY : src/ModelLoader.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -222,6 +249,9 @@ help:
 	@echo "... src/Main.o"
 	@echo "... src/Main.i"
 	@echo "... src/Main.s"
+	@echo "... src/ModelLoader.o"
+	@echo "... src/ModelLoader.i"
+	@echo "... src/ModelLoader.s"
 .PHONY : help
 
 

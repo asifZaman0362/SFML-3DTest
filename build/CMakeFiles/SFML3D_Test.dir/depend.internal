@@ -11,4 +11,8 @@ CMakeFiles/SFML3D_Test.dir/src/Engine.cpp.o
 CMakeFiles/SFML3D_Test.dir/src/Main.cpp.o
  ../include/DrawableObject.h
  ../include/Engine.h
+ ../include/ModelLoader.h
  /home/asif/Documents/GitHub/SFML-3D/src/Main.cpp
+CMakeFiles/SFML3D_Test.dir/src/ModelLoader.cpp.o
+ ../include/ModelLoader.h
+ /home/asif/Documents/GitHub/SFML-3D/src/ModelLoader.cpp
